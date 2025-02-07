@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #letterSection {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #FF6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Your Birthday Surprise!</h1>
+    <div id="wishSection">
+        <h2>Happy Birthday, Ali!</h2>
+        <p>Blow the candles!</p>
+        <button onclick="showLetter()">Blow Candles & Read the Letter</button>
+    </div>
+    <div id="letterSection" style="display: none;">
+        <h3>Letter for You:</h3>
+        <p>
+            Hoiii Ali, <br><br>
+            Happy Birthday! Seriously, I'm so lucky to have you as a brother! You know, I always wanted an older brother, and I've met so many people, but no one's like you! I feel safe and like we're blood-related. You're one of the best people I know. Trust me, I love spending time with you. Furthermore, I always feel safe sharing anything with you. When no one else helped me, you came to my rescue, as always. And one thing: don't ever dare to think that you aren't enough, weak, or anything like that. Masha Allah, you're amazing, gentle, strong, hardworking, intelligent, etc. In sha Allah, one day you will achieve everything and will be relieved from the things you are secretly suffering from. Hope your day is amazing and this next year is even better. Let's celebrate soon!<br><br>
+            Yours, <br>
+            SENORITA
+        </p>
+    </div>
+    <a href="https://www.example.com" target="_blank">
+        <button>Click here for a special surprise!</button>
+    </a>
+    <script>
+        function showLetter() {
+            document.getElementById('letterSection').style.display = 'block';
+        }
+        window.onload = function() {
+            document.getElementById('wishSection').style.display = 'block';
+        };
+    </script>
+</body>
+</html>
